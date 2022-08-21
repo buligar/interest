@@ -1,4 +1,0 @@
-gcc main.c -o main - создание main.c
-./main - компиляция
-gcc -shared -Wl,-soname,adder -o adder.so -fPIC main.c - создание библиотеки С
-

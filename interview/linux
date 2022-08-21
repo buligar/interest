@@ -1,0 +1,17 @@
+sudo apt-get install gnome-tweaks - поменять язык
+sudo apt-get install google-chrome-stable - установить гугл-хром
+sudo apt install chrome-gnome-shell
+sudo apt-get remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
+sudo apt update && sudo apt full-upgrade -y && sudo apt autoclean && sudo apt autoremove -y 
+pwd - абсолютный путь
+ls - список каталог в котором находимся
+touch file.txt - создает пустой файл
+cat - вывод содержимого файла
+mkdir создание нового каталога
+rm удаление пустого каталога 
+rm -r удаление каталога со всеми файлами
+rm file_* удаляет все файлы по шаблону Например file_1.txt file_2.txt
+cp file.txt new_papka копирование файла в нужное место
+cp -r papka1 papka2 копирование каталога в нужное место
+mv file.txt new_papka вырезать и переместить файл
+mv file.txt file1.txt переименование файла

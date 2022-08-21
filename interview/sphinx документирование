@@ -1,0 +1,11 @@
+mkdir docs
+cd docs
+sphinx-quickstart
+1) Название проекта
+2) Автор
+3) Версия проекта
+4) Язык
+sphinx-apidoc - o source ..
+в conf.py расскоментировать os,sys и sys.path.insert(0,os.path.abspath('../..') в extentions = ['sphinx.ext.autodoc']
+в index.ist добавить modules
+.\make html
