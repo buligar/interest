@@ -19,7 +19,7 @@ docker run \
   --rm \
   nginx
 
-
+-----------------------------------------------------------------------------------
 FROM python:alpine
 
 WORKDIR /app
@@ -27,3 +27,6 @@ WORKDIR /app
 COPY . .
 
 CMD ["python",'GLCMGUIver10.py']
+
+-----------------------------------------------------------------------------------
+docker build . -t name_project
