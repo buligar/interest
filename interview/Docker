@@ -18,3 +18,12 @@ docker run \
   -d \
   --rm \
   nginx
+
+
+FROM python:alpine
+
+WORKDIR /app
+
+COPY . .
+
+CMD ["python",'GLCMGUIver10.py']
