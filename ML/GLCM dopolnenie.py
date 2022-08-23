@@ -1,25 +1,26 @@
+import seaborn as sns
+import sklearn.metrics as metrics
 from scipy import stats # Библиотека для научных и технических вычислений.
 from glob import glob # для работы с путями
-import sklearn.metrics as metrics
+from imblearn.over_sampling import RandomOverSampler
 from keras.utils.np_utils import to_categorical  # used for converting labels to one-hot-encoding
 from keras.models import Sequential # Для создания слоев
-from imblearn.over_sampling import RandomOverSampler
+from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D # слои нейросети
+from keras.utils.np_utils import to_categorical  # used for converting labels to one-hot-encoding
+from keras.models import Sequential # Для создания слоев
+from keras.utils import np_utils
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D # слои нейросети
 from sklearn.preprocessing import MinMaxScaler,StandardScaler,Normalizer,LabelEncoder # Стандартизируйте функции, удалив среднее значение и масштабируя до единичной дисперсии и LabelEncoder можно использовать для нормализации меток.
 from sklearn.pipeline import make_pipeline, Pipeline # это служебная функция, которая является сокращением для построения конвейеров.
-from keras.utils import np_utils
 from sklearn.metrics import confusion_matrix # Вычислите матрицу путаницы, чтобы оценить точность классификации.
 from sklearn.decomposition import PCA,NMF
 from sklearn.feature_selection import SelectKBest,f_classif,SelectPercentile,RFECV,chi2 # Вычисление F-значение ANOVA для предоставленного образца и выбор функции в соответствии с процентилем наивысших оценок.
 from sklearn.utils import resample # Распределение данных по различным классам
 from sklearn.svm import LinearSVC
 from PIL import Image # Библиотека для работы с изображениями
-import seaborn as sns #Seaborn — это библиотека визуализации данных Python, основанная на matplotlib .
 
 
-from keras.utils.np_utils import to_categorical  # used for converting labels to one-hot-encoding
-from keras.models import Sequential # Для создания слоев
-from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D # слои нейросети
+
 def HAM10000(self):
     # Загрузка обучающей выборки
     cell1 = pd.read_csv("csv/glcm_train0.csv", delimiter=';')

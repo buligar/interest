@@ -1,13 +1,7 @@
-import kwargs as kwargs
 import matplotlib.pyplot as plt
 import numpy as np
-import os
-import PIL
 import pathlib
 import tensorflow as tf
-from efficientnet import model
-from keras import optimizers
-from keras.layers import Flatten, Dense, Dropout
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential

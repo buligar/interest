@@ -1,43 +1,14 @@
-import pathlib
-
 import np as np
-import os
 import numpy as np
 import sys
-import tkinter as tk
 import cv2
-import numpy
 import matplotlib
-import matplotlib.pylab as plt
-from PIL import ImageTk
-from skimage import color
-import tkinter as tk
-from tkinter import filedialog
-from PyQt5.QtCore import QUrl
-from PyQt5.QtMultimedia import QMediaContent
-from matplotlib import pyplot as plt
-import matplotlib.image as mpimg
-import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-from skimage.util import img_as_ubyte
-from PIL import Image
-import tkinter as tk
-from tkinter import filedialog
-import pandas as pd
-
-from PIL import Image
-from matplotlib.image import imread
+from matplotlib.backends.backend_qt5agg import FigureCanvas
 from skimage.feature import greycomatrix, greycoprops
-from skimage import io
-from tkinter import ttk
-from tkinter.messagebox import showinfo
 from PyQt5 import QtCore, QtWidgets, uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMenuBar, QMenu, QFileDialog, QPushButton, QLabel, QHBoxLayout,QListWidgetItem
 from PyQt5.QtGui import QPixmap
-from matplotlib.backends.backend_qt5agg import FigureCanvas
-from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
-from tkinter import *
 
 matplotlib.use('QT5Agg')
 

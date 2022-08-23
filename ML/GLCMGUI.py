@@ -1,10 +1,7 @@
 import sys
 import matplotlib
-matplotlib.use('Qt5Agg')
-import matplotlib.pyplot as plt
 import np as np
 import numpy as np
-
 from skimage.feature import greycomatrix, greycoprops
 from skimage import io
 from PyQt5 import QtCore, QtWidgets
@@ -12,6 +9,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 
 
+matplotlib.use('Qt5Agg')
 class MplCanvas(FigureCanvasQTAgg):
 
     def __init__(self, parent=None, width=5, height=4, dpi=100):

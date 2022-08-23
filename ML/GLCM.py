@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from pyqtgraph import PlotWidget
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -106,7 +106,7 @@ class Ui_MainWindow(object):
         self.menu.setTitle(_translate("MainWindow", "Файл"))
         self.openfile.setText(_translate("MainWindow", "Открыть"))
         self.savefile.setText(_translate("MainWindow", "Сохранить"))
-from pyqtgraph import PlotWidget
+
 
 
 if __name__ == "__main__":

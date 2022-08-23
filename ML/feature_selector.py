@@ -1,21 +1,10 @@
-# numpy and pandas for data manipulation
+import gc
 import pandas as pd
 import numpy as np
-
-# model used for feature importances
 import lightgbm as lgb
-
-# utility for early stopping with a validation set
-from sklearn.model_selection import train_test_split
-
-# visualizations
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-# memory management
-import gc
-
-# utilities
+from sklearn.model_selection import train_test_split
 from itertools import chain
 
 

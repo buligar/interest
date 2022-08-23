@@ -282,21 +282,21 @@
 # score = model.evaluate(x_valid, y_valid)
 # print('Test accuracy:', score[1])
 
+import os
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import os
-import keras
 import seaborn as sns
 from PIL import Image
 from glob import glob
+from scipy import stats
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
+from sklearn.preprocessing import LabelEncoder
 from keras.utils.np_utils import to_categorical  # used for converting labels to one-hot-encoding
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPool2D, BatchNormalization
-from sklearn.model_selection import train_test_split
-from scipy import stats
-from sklearn.preprocessing import LabelEncoder
+
 
 skin_df = pd.read_csv('HAM10000_metadata.csv')
 np.random.seed(42)

@@ -1,8 +1,8 @@
 import os
 import pandas as pd
-import numpy as np
 from glob import glob
 from sklearn.model_selection import  train_test_split
+
 metadata = "HAM10000_metadata.csv"
 skin_df = pd.read_csv(metadata)
 dataset="C:\\Users\\bulig\\PycharmProjects\\pythonProject\\input\\HAM10000\\HAM10000_img"

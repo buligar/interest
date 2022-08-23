@@ -1,20 +1,15 @@
 import os
 import torch
-import albumentations
-
 import numpy as np
 import pandas as pd
-
 import torch.nn as nn
+import albumentations
+import pretrainedmodels
 from sklearn import metrics
-from sklearn import model_selection
 from torch.nn import functional as F
-
 from wtfml.utils import EarlyStopping
 from wtfml.engine import Engine
 from wtfml.data_loaders.image.loader import ClassificationLoader
-
-import pretrainedmodels
 
 
 class SEResnext50_32x4d(nn.Module):
@@ -124,6 +119,7 @@ def train(fold):
         if es.early_stop:
             print("Early stopping")
             break
+
 def predict(fold):
     test_data_path = "C:/Users/bulig/PycharmProjects/pythonProject/input/siic-isic-224x224-images/test/"
     df = pd.read_csv("C:/Users/bulig/PycharmProjects/pythonProject/input/siim-isic-melanoma-classification/test.csv")

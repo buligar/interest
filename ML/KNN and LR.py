@@ -1,18 +1,14 @@
 import pandas as pd
 import numpy as np
-import joblib # это набор инструментов для упрощенной конвейерной обработки в Python
+from matplotlib import pyplot as plt
 from sklearn.linear_model import LogisticRegression # логистическая регрессия
 from sklearn.neighbors import KNeighborsClassifier # к-ближайших соседей
-from sklearn.model_selection import KFold # К-проверка
 from sklearn.model_selection import GridSearchCV,StratifiedKFold, cross_val_score, train_test_split
-from imblearn.over_sampling import RandomOverSampler
-from sklearn.metrics import precision_recall_fscore_support as score # метрики
-from sklearn.metrics import accuracy_score,recall_score,roc_auc_score,roc_curve, RocCurveDisplay,f1_score,jaccard_score,precision_score
-from matplotlib import pyplot as plt # Pyplot предоставляет интерфейс конечного автомата для базовой библиотеки построения графиков в matplotlib.
 from sklearn.preprocessing import StandardScaler # подключение преобразователя данных
 from sklearn.pipeline import make_pipeline # подключение сокращения для конструктора конвейера
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import RepeatedStratifiedKFold
+
+
 np.set_printoptions(edgeitems=100000)
 massive=np.array(range(112,125)).flatten()
 print(massive)
