@@ -34,3 +34,16 @@ git merge features/cc-100-helloworld - Имя ветки с которой ну�
 6. git push -u origin main
 Ввести логин
 Ввести API токен
+
+Как собрать проект
+1. mkdir project
+2. cd project
+3. git clone ссылка
+4. git pull 
+5. pip install -r requirements.txt
+6. export PYTHONPATH=/home/nest/project/multi-area-model:$PYTHONPATH
+7. cd tests/
+8. pytest-3 -v
+9. cd figures/papka/
+10. snakemake
+11. python3 run_example.py
