@@ -47,3 +47,6 @@ git merge features/cc-100-helloworld - Имя ветки с которой ну�
 9. cd figures/papka/
 10. snakemake
 11. python3 run_example.py
+
+python makemigrations
+python migrate
